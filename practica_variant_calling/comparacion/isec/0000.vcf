@@ -1,0 +1,10 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##contig=<ID=chr1,length=500000>
+##INFO=<ID=TYPE,Number=1,Type=String,Description="Synthetic variant type">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##bcftools_normVersion=1.22+htslib-1.22.1
+##bcftools_normCommand=norm -f referencia/reference.fa -m -any -Oz -o truth/truth.norm.vcf.gz truth/truth_variants.vcf.gz; Date=Wed Oct 28 00:41:57 2026
+##bcftools_isecVersion=1.22+htslib-1.22.1
+##bcftools_isecCommand=isec -c none -p comparacion/isec truth/truth.norm.vcf.gz resultados/normalized.sorted.vcf.gz; Date=Wed Oct 28 00:41:57 2026
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
